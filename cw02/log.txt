@@ -1,0 +1,108 @@
+student@W408068-16:~/Danya$ vim todo.txt
+student@W408068-16:~/Danya$ python3
+Python 3.4.0 (default, Apr 11 2014, 13:05:11) 
+[GCC 4.8.2] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1+2
+3
+>>> 10***20
+  File "<stdin>", line 1
+    10***20
+        ^
+SyntaxError: invalid syntax
+>>> 10**20
+100000000000000000000
+>>> 10**500
+100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+>>> 123**123**123
+^C^\Выход (сделан дамп памяти)
+student@W408068-16:~/Danya$ python3
+Python 3.4.0 (default, Apr 11 2014, 13:05:11) 
+[GCC 4.8.2] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 123%100
+23
+>>> 123/100
+1.23
+>>> 123//100
+1
+>>> 1j**2
+(-1+0j)
+>>> x = 1j**2
+>>> x.re
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 're'
+>>> x.real
+-1.0
+>>> x.imag
+0.0
+>>> int("42")
+42
+>>> int(42.0)
+42
+>>> inf("42a")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'inf' is not defined
+>>> int("42a")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '42a'
+>>> inf("42", 5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'inf' is not defined
+>>> int("42", 5)
+22
+>>> "hello, 'world'"
+"hello, 'world'"
+>>> "hello\nrowld"
+'hello\nrowld'
+>>> print("hello,\nworld")
+hello,
+world
+>>> x = "hello,\nworld yes!"
+>>> x == "hello,\nworld yes!"
+True
+>>> x == "hello,\nworld"
+False
+>>> x < "a"
+False
+>>> x < "z"
+True
+>>> x != "a"
+True
+>>> sorted(x)
+['\n', ' ', '!', ',', 'd', 'e', 'e', 'h', 'l', 'l', 'l', 'o', 'o', 'r', 's', 'w', 'y']
+>>> dir(x)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> help(x.split)
+
+>>> x.split()
+['hello,', 'world', 'yes!']
+>>> x.split('o')
+['hell', ',\nw', 'rld yes!']
+>>> x.split('l')
+['he', '', 'o,\nwor', 'd yes!']
+>>> "Hello, {}!".format("world")
+'Hello, world!'
+>>> "Hello, {0}!".format("world")
+'Hello, world!'
+>>> "Hello, {0}!".format(45)
+'Hello, 45!'
+>>> "Hello, #{r:02X}{g:02X}{b:02X}!".format(42, 190, 9)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'r'
+>>> "Hello, #{r:02X}{g:02X}{b:02X}!".format(r=42, g=190, b=9)
+'Hello, #2ABE09!'
+>>> x.split('l')
+['he', '', 'o,\nwor', 'd yes!']
+>>> x.split(sep='l')
+['he', '', 'o,\nwor', 'd yes!']
+>>> help(x.split)
+
+>>> x.split(maxsplit=1)
+['hello,', 'world yes!']
+>>> 

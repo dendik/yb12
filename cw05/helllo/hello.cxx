@@ -1,5 +1,6 @@
-#include <iostream>
+#include "helloer.h"
 
 int main(int argc, char **argv) {
-	std::cout << "Hello" << std::endl;
+	Hello::hello();
+	return 0;
 }

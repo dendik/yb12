@@ -1,0 +1,5 @@
+namespace Hello {
+
+void hello();
+
+};

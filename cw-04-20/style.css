@@ -1,0 +1,37 @@
+h3 {
+	color: red;
+}
+
+body {
+	background-color: #4f4;
+}
+
+#chapter1 {
+	text-align: center;
+	background-color: yellow;
+	border: solid 5px blue; /* solid, dotted, dahsed, ... */
+	border-radius: 30px;
+	margin: 250px;
+	padding: 50px;
+}
+
+.chapter2 {
+	color: green;
+	text-decoration: underline;
+}
+
+.yellow, .chapter2, #chapter1 { /* applies to each of them */
+	font-weight: bold;
+}
+
+ul li { /* ancestor child */
+	color: blue;
+}
+
+h1 {
+	position: fixed;
+	left: 20px;
+	top: 20px;
+}
+
+
